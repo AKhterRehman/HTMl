@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-actions {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>REPORT FORM</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter an internet contact address" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter a code to identify you" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Complete address" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="Pakistan" selected>Pakistan</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="Germany">Germany</option>
+                <option value="India">India</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div class="form-group">
+            <label>Hobbies</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="listening_music" name="hobbies" value="listening_music">
+            <label for="listening_music">Listening Music</label>
+            <input type="checkbox" id="gardening" name="hobbies" value="gardening">
+            <label for="gardening">Gardening</label>
+            <input type="checkbox" id="swimming" name="hobbies" value="swimming">
+            <label for="swimming">Swimming</label>
+            <input type="checkbox" id="athletics" name="hobbies" value="athletics">
+            <label for="athletics">Athletics</label>
+            <input type="checkbox" id="check_all" name="hobbies" value="check_all">
+            <label for="check_all">Check All</label>
+        </div>
+        <div class="form-group">
+            <label for="website">Your Website</label>
+            <input type="url" id="website" name="website" placeholder="Provide your website URL if exists (not necessary)">
+        </div>
+        <div class="form-group">
+            <label for="other_info">Other Information About You</label>
+            <textarea id="other_info" name="other_info" placeholder="Write any other information that is not present here"></textarea>
+        </div>
+        <div class="form-actions">
+            <button type="submit">Send in my report</button>
+            <button type="reset">Erase report form</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
